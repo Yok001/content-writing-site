@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Content Writing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #f8c471;
+        }
+        .container {
+            width: 85%;
+            margin: auto;
+            padding: 40px 0;
+        }
+        section {
+            background: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #222;
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #e9ecef;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>Our Content Writing Services</header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="write.html">Write</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <section>
+            <h2>What We Offer</h2>
+            <ul>
+                <li>📌 **SEO Blog Writing** – Engaging articles optimized for search engines.</li>
+                <li>📌 **Technical Writing** – Clear and precise documentation for tech-based industries.</li>
+                <li>📌 **Website Content** – Professional content that drives conversions.</li>
+                <li>📌 **Copywriting** – Persuasive writing that sells products and services.</li>
+                <li>📌 **Editing & Proofreading** – Polished content free of errors.</li>
+            </ul>
+        </section>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let nav = document.querySelector("nav");
+            if (!nav.innerHTML.includes('write.html')) {
+                nav.innerHTML += '<a href="write.html">Write</a>';
+            }
+        });
+    </script>
+</body>
+</html>
